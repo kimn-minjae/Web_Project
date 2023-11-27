@@ -1,0 +1,50 @@
+#audioPlayer {
+    width: 300px;
+    margin: 20px;
+}
+
+#progressBar, #volumeBar {
+    width: 100%;
+    height: 10px;
+    background-color: #ccc;
+    position: relative;
+    margin-top: 10px;
+}
+
+#currentProgress, #currentVolume {
+    height: 100%;
+    position: absolute;
+}
+
+#currentProgress {
+    background-color: #4caf50;
+}
+
+#currentVolume {
+    background-color: #2196F3;
+}
+
+#playButton, #repeatButton, #prevButton, #nextButton {
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#volumeControl {
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#currentTime {
+    margin-top: 10px;
+}
