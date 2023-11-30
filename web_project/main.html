@@ -17,36 +17,72 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 2%;
             bottom: 0;
             width: 100%;
             padding: 15px 0;
-            background-color: #666666;
+            background-color: #414559;
+        }
+
+        footer>div {
+            display: flex;
+            align-items: center;
         }
 
         #footer_div1 {
-            width: 40%;
+            width: 70%;
+            max-width: 500px;
+            flex-direction: column;
         }
+
         #footer_div2 {
-            width: 8%;
-        }
-        footer>div {
-            display: flex;
+            width: 15%;
+            max-width: 200px;
             flex-direction: column;
             align-items: center;
+            justify-content: flex-end;
+
         }
 
         footer #music_info {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        footer #music_info_image_contain {
+            border: 1px solid #000000;
+            height: 66px;
+            width: 66px;
+            overflow: hidden;
+        }
+
+        footer #music_info_image_contain>img {
+            width: 100%;
+        }
+
+        #footer_div1>div {
+            width: 100%;
+        }
+
+        footer #music_info #music_info_texts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
         }
 
         #music_info_texts h1 {
-            font-size: 22px;
+            font-size: 20px;
+            color: #FFFFFF;
         }
 
         #music_info_texts h2 {
-            font-size: 16px;
+            font-size: 15px;
             font-weight: normal;
+            color: #FFFFFF;
         }
 
         #audioPlayer {
@@ -77,29 +113,52 @@
             background-color: #2196F3;
         }
 
+        #buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 15px;
+        }
+
+        #buttons>svg {
+            width: 16px;
+        }
+
+        #volume_control {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+        }
+
+        #time {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            width: 100%;
+        }
+
+        #time div {
+            font-size: 11px;
+            color: #FFFFFF;
+        }
+
+
         #playButton,
         #repeatButton,
         #prevButton,
         #nextButton {
-            margin-top: 20px;
             cursor: pointer;
-            padding: 10px;
-            background-color: #4caf50;
             color: white;
             border: none;
-            border-radius: 5px;
-            margin-right: 10px;
         }
 
         #volumeControl {
             width: 20px;
             height: 20px;
-            margin-top: 20px;
             cursor: pointer;
-            padding: 10px;
             border: none;
             border-radius: 5px;
-            margin-right: 10px;
         }
 
 
@@ -127,9 +186,11 @@
     </audio>
 
     <footer>
+        <div id="music_info_image_contain">
+            <img id="music_info_image" src="" alt="이미지">
+        </div>
         <div id="footer_div1">
             <div id="music_info">
-                <img id="music_info_image" src="" alt="이미지">
                 <div id="music_info_texts">
                     <h1>Title</h1>
                     <h2>Subtitle</h2>
@@ -141,19 +202,41 @@
         </div>
         <div id="footer_div2">
             <div id="buttons">
-                <button id="prevButton">이전 곡</button>
-                <button id="playButton">음악 재생</button>
-                <button id="nextButton">다음 곡</button>
+                <svg id="prevButton" width="26" height="25" viewBox="0 0 26 25" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.781494 12.5L19.5315 23.3253L19.5315 1.67468L0.781494 12.5Z" fill="white"
+                        fill-opacity="0.75" />
+                    <rect width="5" height="15" transform="matrix(-1 0 0 1 5.78149 5)" fill="white"
+                        fill-opacity="0.75" />
+                </svg>
+                <svg id="playButton" width="27" height="32" viewBox="0 0 27 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.2415 16L-0.00854492 31.1554L-0.00854492 0.844556L26.2415 16Z" fill="white"
+                        fill-opacity="0.75" />
+                </svg>
+                <svg id="nextButton" width="26" height="25" viewBox="0 0 26 25" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.7014 12.5L6.95142 23.3253L6.95142 1.67468L25.7014 12.5Z" fill="white"
+                        fill-opacity="0.75" />
+                    <rect x="20.7014" y="5" width="5" height="15" fill="white" fill-opacity="0.75" />
+                </svg>
+                <svg id="repeatButton" width="30" height="37" viewBox="0 0 30 37" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M14.9434 9.70867V7.36492C16.4562 7.36492 17.8696 7.64901 19.1835 8.21719C20.5045 8.77827 21.6622 9.55953 22.6565 10.5609C23.6579 11.5624 24.4392 12.7236 25.0002 14.0446C25.5684 15.3585 25.8525 16.7683 25.8525 18.274C25.8525 19.7797 25.572 21.193 25.0109 22.5141C24.4498 23.828 23.6686 24.9857 22.6671 25.9871C21.6657 26.9885 20.5045 27.7733 19.1835 28.3415C17.8696 28.9026 16.4562 29.1831 14.9434 29.1831C13.4377 29.1831 12.0244 28.9026 10.7034 28.3415C9.38945 27.7733 8.23178 26.9885 7.23036 25.9871C6.22894 24.9857 5.44414 23.828 4.87595 22.5141C4.31487 21.193 4.03434 19.7797 4.03434 18.274H6.37809C6.37809 19.453 6.59826 20.5609 7.0386 21.5979C7.47894 22.6348 8.09328 23.5475 8.88164 24.3358C9.66999 25.1171 10.5826 25.7314 11.6196 26.1788C12.6565 26.6192 13.7644 26.8394 14.9434 26.8394C16.1295 26.8394 17.241 26.6192 18.2779 26.1788C19.3149 25.7314 20.224 25.1171 21.0052 24.3358C21.7936 23.5475 22.4079 22.6384 22.8483 21.6085C23.2886 20.5716 23.5088 19.4601 23.5088 18.274C23.5088 17.0879 23.285 15.98 22.8376 14.9502C22.3973 13.9132 21.7829 13.0041 20.9946 12.2229C20.2133 11.4345 19.3042 10.8202 18.2673 10.3798C17.2375 9.93239 16.1295 9.70867 14.9434 9.70867ZM15.6252 15.078L9.29712 8.74987L15.6252 2.42174V15.078Z"
+                        fill="white" />
+                </svg>
             </div>
-
-            <img src="./icon/volume.png" alt="" id="volumeControl">
-            <button id="repeatButton">반복 재생</button>
-            <div id="volumeBar">
-                <div id="currentVolume"></div>
+            <div id="volume_control">
+                <img src="./icon/volume.png" alt="" id="volumeControl">
+                <div id="volumeBar">
+                    <div id="currentVolume"></div>
+                </div>
             </div>
-
-            <div id="currentTime">재생 시간: 0:00</div>
-            <div id="totalTime">전체 시간: 0:00</div>
+            <div id="time">
+                <div id="currentTime">0:00</div>
+                <div id="totalTime">0:00</div>
+            </div>
         </div>
     </footer>
 
