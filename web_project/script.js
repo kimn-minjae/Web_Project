@@ -236,233 +236,989 @@ document.addEventListener('DOMContentLoaded', function () {
             // 여기서 검색어와 일치하는 경우에만 이미지를 표시
             if (searchInput.value.toLowerCase() == "perfect night") {
 
-                const title = document.createElement('h3');
-                title.textContent = item.title1;
-                resultContainer.appendChild(title);
+                const title1 = document.createElement('h3');
+                title1.textContent = item.title1_1;
+                title1.className = 'title1';
+                resultContainer.appendChild(title1);
 
-                const image = document.createElement('img');
-                image.src = item.image1;
-                image.alt = '';
-                resultContainer.appendChild(image);
+                const title2 = document.createElement('h3');
+                title2.textContent = item.title1_2;
+                title2.className = 'title2';
+                resultContainer.appendChild(title2);
 
-                image.addEventListener('click', function () {
+                const title3 = document.createElement('h3');
+                title3.textContent = item.title1_3;
+                title3.className = 'title3';
+                resultContainer.appendChild(titl3);
+
+                const title4 = document.createElement('h3');
+                title4.textContent = item.title1_4;
+                title4.className = 'title4';
+                resultContainer.appendChild(title4);
+
+                const image1 = document.createElement('img');
+                image1.src = item.image1_1;
+                image1.alt = '';
+                image1.className = 'image1';
+                resultContainer.appendChild(image1);
+
+                const image2 = document.createElement('img');
+                image2.src = item.image1_2;
+                image2.alt = '';
+                image2.className = 'image2';
+                resultContainer.appendChild(image2);
+
+                const image3 = document.createElement('img');
+                image3.src = item.image1_3;
+                image3.alt = '';
+                image3.className = 'image3';
+                resultContainer.appendChild(image3);
+
+                const image4 = document.createElement('img');
+                image4.src = item.image1_4;
+                image4.alt = '';
+                image4.className = 'image3';
+                resultContainer.appendChild(image4);
+
+                image1.addEventListener('click', function () {
                     window.open(item.url1, '_blank', 'fullscreen')
                 });
 
-                const description = document.createElement('p');
-                description.textContent = item.description1;
-                resultContainer.appendChild(description);
+                image2.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                image3.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                image4.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                const description1 = document.createElement('p');
+                description1.textContent = item.description1_1;
+                description1.className = 'description1';
+                resultContainer.appendChild(description1);
+
+                const description2 = document.createElement('p');
+                description2.textContent = item.description1_2;
+                description2.className = 'description2';
+                resultContainer.appendChild(description2);
+
+                const description3 = document.createElement('p');
+                description3.textContent = item.description1_3;
+                description3.className = 'description3';
+                resultContainer.appendChild(description3);
+
+                const description4 = document.createElement('p');
+                description4.textContent = item.description1_4;
+                description4.className = 'description4';
+                resultContainer.appendChild(description4);
 
             }
             else if (searchInput.value.toLowerCase() == "drama") {
 
-                const title = document.createElement('h3');
-                title.textContent = item.title2;
-                resultContainer.appendChild(title);
+                const title1 = document.createElement('h3');
+                title1.textContent = item.title2_1;
+                title1.className = 'title1';
+                resultContainer.appendChild(title1);
 
-                const image = document.createElement('img');
-                image.src = item.image2;
-                image.alt = '';
-                resultContainer.appendChild(image);
+                const title2 = document.createElement('h3');
+                title2.textContent = item.title2_2;
+                title2.className = 'title2';
+                resultContainer.appendChild(title2);
 
-                image.addEventListener('click', function () {
+                const title3 = document.createElement('h3');
+                title3.textContent = item.title2_3;
+                title3.className = 'title3';
+                resultContainer.appendChild(titl3);
+
+                const title4 = document.createElement('h3');
+                title4.textContent = item.title2_4;
+                title4.className = 'title4';
+                resultContainer.appendChild(title4);
+
+                const image1 = document.createElement('img');
+                image1.src = item.image2_1;
+                image1.alt = '';
+                image1.className = 'image1';
+                resultContainer.appendChild(image1);
+
+                const image2 = document.createElement('img');
+                image2.src = item.image2_2;
+                image2.alt = '';
+                image2.className = 'image2';
+                resultContainer.appendChild(image2);
+
+                const image3 = document.createElement('img');
+                image3.src = item.image2_3;
+                image3.alt = '';
+                image3.className = 'image3';
+                resultContainer.appendChild(image3);
+
+                const image4 = document.createElement('img');
+                image4.src = item.image2_4;
+                image4.alt = '';
+                image4.className = 'image3';
+                resultContainer.appendChild(image4);
+
+                image1.addEventListener('click', function () {
                     window.open(item.url2, '_blank', 'fullscreen')
                 });
 
-                const description = document.createElement('p');
-                description.textContent = item.description2;
-                resultContainer.appendChild(description);
+                image2.addEventListener('click', function () {
+                    window.open(item.url2, '_blank', 'fullscreen')
+                });
+
+                image3.addEventListener('click', function () {
+                    window.open(item.url2, '_blank', 'fullscreen')
+                });
+
+                image4.addEventListener('click', function () {
+                    window.open(item.url2, '_blank', 'fullscreen')
+                });
+
+                const description1 = document.createElement('p');
+                description1.textContent = item.description2_1;
+                description1.className = 'description1';
+                resultContainer.appendChild(description1);
+
+                const description2 = document.createElement('p');
+                description2.textContent = item.description2_2;
+                description2.className = 'description2';
+                resultContainer.appendChild(description2);
+
+                const description3 = document.createElement('p');
+                description3.textContent = item.description2_3;
+                description3.className = 'description3';
+                resultContainer.appendChild(description3);
+
+                const description4 = document.createElement('p');
+                description4.textContent = item.description2_4;
+                description4.className = 'description4';
+                resultContainer.appendChild(description4);
             }
             else if (searchInput.value.toLowerCase() == "baddie") {
 
-                const title = document.createElement('h3');
-                title.textContent = item.title3;
-                resultContainer.appendChild(title);
+                const title1 = document.createElement('h3');
+                title1.textContent = item.title3_1;
+                title1.className = 'title1';
+                resultContainer.appendChild(title1);
 
-                const image = document.createElement('img');
-                image.src = item.image3;
-                image.alt = '';
-                resultContainer.appendChild(image);
+                const title2 = document.createElement('h3');
+                title2.textContent = item.title3_2;
+                title2.className = 'title2';
+                resultContainer.appendChild(title2);
 
-                image.addEventListener('click', function () {
+                const title3 = document.createElement('h3');
+                title3.textContent = item.title3_3;
+                title3.className = 'title3';
+                resultContainer.appendChild(titl3);
+
+                const title4 = document.createElement('h3');
+                title4.textContent = item.title3_4;
+                title4.className = 'title4';
+                resultContainer.appendChild(title4);
+
+                const image1 = document.createElement('img');
+                image1.src = item.image3_1;
+                image1.alt = '';
+                image1.className = 'image1';
+                resultContainer.appendChild(image1);
+
+                const image2 = document.createElement('img');
+                image2.src = item.image3_2;
+                image2.alt = '';
+                image2.className = 'image2';
+                resultContainer.appendChild(image2);
+
+                const image3 = document.createElement('img');
+                image3.src = item.image3_3;
+                image3.alt = '';
+                image3.className = 'image3';
+                resultContainer.appendChild(image3);
+
+                const image4 = document.createElement('img');
+                image4.src = item.image3_4;
+                image4.alt = '';
+                image4.className = 'image3';
+                resultContainer.appendChild(image4);
+
+                image1.addEventListener('click', function () {
                     window.open(item.url3, '_blank', 'fullscreen')
                 });
 
-                const description = document.createElement('p');
-                description.textContent = item.description3;
-                resultContainer.appendChild(description);
+                image2.addEventListener('click', function () {
+                    window.open(item.url3, '_blank', 'fullscreen')
+                });
+
+                image3.addEventListener('click', function () {
+                    window.open(item.url3, '_blank', 'fullscreen')
+                });
+
+                image4.addEventListener('click', function () {
+                    window.open(item.url3, '_blank', 'fullscreen')
+                });
+
+                const description1 = document.createElement('p');
+                description1.textContent = item.description1;
+                description1.className = 'description1';
+                resultContainer.appendChild(description1);
+
+                const description2 = document.createElement('p');
+                description2.textContent = item.description1;
+                description2.className = 'description2';
+                resultContainer.appendChild(description2);
+
+                const description3 = document.createElement('p');
+                description3.textContent = item.description1;
+                description3.className = 'description3';
+                resultContainer.appendChild(description3);
+
+                const description4 = document.createElement('p');
+                description4.textContent = item.description1;
+                description4.className = 'description4';
+                resultContainer.appendChild(description4);
             }
             else if (searchInput.value.toLowerCase() == "seven") {
 
-                const title = document.createElement('h3');
-                title.textContent = item.title4;
-                resultContainer.appendChild(title);
+                const title1 = document.createElement('h3');
+                title1.textContent = item.title1;
+                title1.className = 'title1';
+                resultContainer.appendChild(title1);
 
-                const image = document.createElement('img');
-                image.src = item.image4;
-                image.alt = '';
-                resultContainer.appendChild(image);
+                const title2 = document.createElement('h3');
+                title2.textContent = item.title1;
+                title2.className = 'title2';
+                resultContainer.appendChild(title2);
 
-                image.addEventListener('click', function () {
-                    window.open(item.url4, '_blank', 'fullscreen')
+                const title3 = document.createElement('h3');
+                title3.textContent = item.title1;
+                title3.className = 'title3';
+                resultContainer.appendChild(titl3);
+
+                const title4 = document.createElement('h3');
+                title4.textContent = item.title1;
+                title4.className = 'title4';
+                resultContainer.appendChild(title4);
+
+                const image1 = document.createElement('img');
+                image1.src = item.image1;
+                image1.alt = '';
+                image1.className = 'image1';
+                resultContainer.appendChild(image1);
+
+                const image2 = document.createElement('img');
+                image2.src = item.image1;
+                image2.alt = '';
+                image2.className = 'image2';
+                resultContainer.appendChild(image2);
+
+                const image3 = document.createElement('img');
+                image3.src = item.image1;
+                image3.alt = '';
+                image3.className = 'image3';
+                resultContainer.appendChild(image3);
+
+                const image4 = document.createElement('img');
+                image4.src = item.image1;
+                image4.alt = '';
+                image4.className = 'image3';
+                resultContainer.appendChild(image4);
+
+                image1.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
                 });
 
-                const description = document.createElement('p');
-                description.textContent = item.description4;
-                resultContainer.appendChild(description);
+                image2.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                image3.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                image4.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                const description1 = document.createElement('p');
+                description1.textContent = item.description1;
+                description1.className = 'description1';
+                resultContainer.appendChild(description1);
+
+                const description2 = document.createElement('p');
+                description2.textContent = item.description1;
+                description2.className = 'description2';
+                resultContainer.appendChild(description2);
+
+                const description3 = document.createElement('p');
+                description3.textContent = item.description1;
+                description3.className = 'description3';
+                resultContainer.appendChild(description3);
+
+                const description4 = document.createElement('p');
+                description4.textContent = item.description1;
+                description4.className = 'description4';
+                resultContainer.appendChild(description4);
             }
             else if (searchInput.value.toLowerCase() == "love lee") {
 
-                const title = document.createElement('h3');
-                title.textContent = item.title5;
-                resultContainer.appendChild(title);
+                const title1 = document.createElement('h3');
+                title1.textContent = item.title1;
+                title1.className = 'title1';
+                resultContainer.appendChild(title1);
 
-                const image = document.createElement('img');
-                image.src = item.image5;
-                image.alt = '';
-                resultContainer.appendChild(image);
+                const title2 = document.createElement('h3');
+                title2.textContent = item.title1;
+                title2.className = 'title2';
+                resultContainer.appendChild(title2);
 
-                image.addEventListener('click', function () {
-                    window.open(item.url5, '_blank', 'fullscreen')
+                const title3 = document.createElement('h3');
+                title3.textContent = item.title1;
+                title3.className = 'title3';
+                resultContainer.appendChild(titl3);
+
+                const title4 = document.createElement('h3');
+                title4.textContent = item.title1;
+                title4.className = 'title4';
+                resultContainer.appendChild(title4);
+
+                const image1 = document.createElement('img');
+                image1.src = item.image1;
+                image1.alt = '';
+                image1.className = 'image1';
+                resultContainer.appendChild(image1);
+
+                const image2 = document.createElement('img');
+                image2.src = item.image1;
+                image2.alt = '';
+                image2.className = 'image2';
+                resultContainer.appendChild(image2);
+
+                const image3 = document.createElement('img');
+                image3.src = item.image1;
+                image3.alt = '';
+                image3.className = 'image3';
+                resultContainer.appendChild(image3);
+
+                const image4 = document.createElement('img');
+                image4.src = item.image1;
+                image4.alt = '';
+                image4.className = 'image3';
+                resultContainer.appendChild(image4);
+
+                image1.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
                 });
 
-                const description = document.createElement('p');
-                description.textContent = item.description5;
-                resultContainer.appendChild(description);
+                image2.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                image3.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                image4.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                const description1 = document.createElement('p');
+                description1.textContent = item.description1;
+                description1.className = 'description1';
+                resultContainer.appendChild(description1);
+
+                const description2 = document.createElement('p');
+                description2.textContent = item.description1;
+                description2.className = 'description2';
+                resultContainer.appendChild(description2);
+
+                const description3 = document.createElement('p');
+                description3.textContent = item.description1;
+                description3.className = 'description3';
+                resultContainer.appendChild(description3);
+
+                const description4 = document.createElement('p');
+                description4.textContent = item.description1;
+                description4.className = 'description4';
+                resultContainer.appendChild(description4);
 
             }
             else if (searchInput.value.toLowerCase() == "사랑은 늘 도망가") {
 
-                const title = document.createElement('h3');
-                title.textContent = item.title6;
-                resultContainer.appendChild(title);
+                const title1 = document.createElement('h3');
+                title1.textContent = item.title1;
+                title1.className = 'title1';
+                resultContainer.appendChild(title1);
 
-                const image = document.createElement('img');
-                image.src = item.image6;
-                image.alt = '';
-                resultContainer.appendChild(image);
+                const title2 = document.createElement('h3');
+                title2.textContent = item.title1;
+                title2.className = 'title2';
+                resultContainer.appendChild(title2);
 
-                image.addEventListener('click', function () {
-                    window.open(item.url6, '_blank', 'fullscreen')
+                const title3 = document.createElement('h3');
+                title3.textContent = item.title1;
+                title3.className = 'title3';
+                resultContainer.appendChild(titl3);
+
+                const title4 = document.createElement('h3');
+                title4.textContent = item.title1;
+                title4.className = 'title4';
+                resultContainer.appendChild(title4);
+
+                const image1 = document.createElement('img');
+                image1.src = item.image1;
+                image1.alt = '';
+                image1.className = 'image1';
+                resultContainer.appendChild(image1);
+
+                const image2 = document.createElement('img');
+                image2.src = item.image1;
+                image2.alt = '';
+                image2.className = 'image2';
+                resultContainer.appendChild(image2);
+
+                const image3 = document.createElement('img');
+                image3.src = item.image1;
+                image3.alt = '';
+                image3.className = 'image3';
+                resultContainer.appendChild(image3);
+
+                const image4 = document.createElement('img');
+                image4.src = item.image1;
+                image4.alt = '';
+                image4.className = 'image3';
+                resultContainer.appendChild(image4);
+
+                image1.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
                 });
 
-                const description = document.createElement('p');
-                description.textContent = item.description6;
-                resultContainer.appendChild(description);
+                image2.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                image3.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                image4.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                const description1 = document.createElement('p');
+                description1.textContent = item.description1;
+                description1.className = 'description1';
+                resultContainer.appendChild(description1);
+
+                const description2 = document.createElement('p');
+                description2.textContent = item.description1;
+                description2.className = 'description2';
+                resultContainer.appendChild(description2);
+
+                const description3 = document.createElement('p');
+                description3.textContent = item.description1;
+                description3.className = 'description3';
+                resultContainer.appendChild(description3);
+
+                const description4 = document.createElement('p');
+                description4.textContent = item.description1;
+                description4.className = 'description4';
+                resultContainer.appendChild(description4);
             }
             else if (searchInput.value.toLowerCase() == "후라이의 꿈") {
 
-                const title = document.createElement('h3');
-                title.textContent = item.title7;
-                resultContainer.appendChild(title);
+                const title1 = document.createElement('h3');
+                title1.textContent = item.title1;
+                title1.className = 'title1';
+                resultContainer.appendChild(title1);
 
-                const image = document.createElement('img');
-                image.src = item.image7;
-                image.alt = '';
-                resultContainer.appendChild(image);
+                const title2 = document.createElement('h3');
+                title2.textContent = item.title1;
+                title2.className = 'title2';
+                resultContainer.appendChild(title2);
 
-                image.addEventListener('click', function () {
-                    window.open(item.url7, '_blank', 'fullscreen')
+                const title3 = document.createElement('h3');
+                title3.textContent = item.title1;
+                title3.className = 'title3';
+                resultContainer.appendChild(titl3);
+
+                const title4 = document.createElement('h3');
+                title4.textContent = item.title1;
+                title4.className = 'title4';
+                resultContainer.appendChild(title4);
+
+                const image1 = document.createElement('img');
+                image1.src = item.image1;
+                image1.alt = '';
+                image1.className = 'image1';
+                resultContainer.appendChild(image1);
+
+                const image2 = document.createElement('img');
+                image2.src = item.image1;
+                image2.alt = '';
+                image2.className = 'image2';
+                resultContainer.appendChild(image2);
+
+                const image3 = document.createElement('img');
+                image3.src = item.image1;
+                image3.alt = '';
+                image3.className = 'image3';
+                resultContainer.appendChild(image3);
+
+                const image4 = document.createElement('img');
+                image4.src = item.image1;
+                image4.alt = '';
+                image4.className = 'image3';
+                resultContainer.appendChild(image4);
+
+                image1.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
                 });
 
-                const description = document.createElement('p');
-                description.textContent = item.description7;
-                resultContainer.appendChild(description);
+                image2.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                image3.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                image4.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                const description1 = document.createElement('p');
+                description1.textContent = item.description1;
+                description1.className = 'description1';
+                resultContainer.appendChild(description1);
+
+                const description2 = document.createElement('p');
+                description2.textContent = item.description1;
+                description2.className = 'description2';
+                resultContainer.appendChild(description2);
+
+                const description3 = document.createElement('p');
+                description3.textContent = item.description1;
+                description3.className = 'description3';
+                resultContainer.appendChild(description3);
+
+                const description4 = document.createElement('p');
+                description4.textContent = item.description1;
+                description4.className = 'description4';
+                resultContainer.appendChild(description4);
             }
             else if (searchInput.value.toLowerCase() == "you & me") {
 
-                const title = document.createElement('h3');
-                title.textContent = item.title8;
-                resultContainer.appendChild(title);
+                const title1 = document.createElement('h3');
+                title1.textContent = item.title1;
+                title1.className = 'title1';
+                resultContainer.appendChild(title1);
 
-                const image = document.createElement('img');
-                image.src = item.image8;
-                image.alt = '';
-                resultContainer.appendChild(image);
+                const title2 = document.createElement('h3');
+                title2.textContent = item.title1;
+                title2.className = 'title2';
+                resultContainer.appendChild(title2);
 
-                image.addEventListener('click', function () {
-                    window.open(item.url8, '_blank', 'fullscreen')
+                const title3 = document.createElement('h3');
+                title3.textContent = item.title1;
+                title3.className = 'title3';
+                resultContainer.appendChild(titl3);
+
+                const title4 = document.createElement('h3');
+                title4.textContent = item.title1;
+                title4.className = 'title4';
+                resultContainer.appendChild(title4);
+
+                const image1 = document.createElement('img');
+                image1.src = item.image1;
+                image1.alt = '';
+                image1.className = 'image1';
+                resultContainer.appendChild(image1);
+
+                const image2 = document.createElement('img');
+                image2.src = item.image1;
+                image2.alt = '';
+                image2.className = 'image2';
+                resultContainer.appendChild(image2);
+
+                const image3 = document.createElement('img');
+                image3.src = item.image1;
+                image3.alt = '';
+                image3.className = 'image3';
+                resultContainer.appendChild(image3);
+
+                const image4 = document.createElement('img');
+                image4.src = item.image1;
+                image4.alt = '';
+                image4.className = 'image3';
+                resultContainer.appendChild(image4);
+
+                image1.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
                 });
 
-                const description = document.createElement('p');
-                description.textContent = item.description8;
-                resultContainer.appendChild(description);
+                image2.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                image3.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                image4.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                const description1 = document.createElement('p');
+                description1.textContent = item.description1;
+                description1.className = 'description1';
+                resultContainer.appendChild(description1);
+
+                const description2 = document.createElement('p');
+                description2.textContent = item.description1;
+                description2.className = 'description2';
+                resultContainer.appendChild(description2);
+
+                const description3 = document.createElement('p');
+                description3.textContent = item.description1;
+                description3.className = 'description3';
+                resultContainer.appendChild(description3);
+
+                const description4 = document.createElement('p');
+                description4.textContent = item.description1;
+                description4.className = 'description4';
+                resultContainer.appendChild(description4);
             }
             else if (searchInput.value.toLowerCase() == "헤어지자 말해요") {
 
-                const title = document.createElement('h3');
-                title.textContent = item.title9;
-                resultContainer.appendChild(title);
+                const title1 = document.createElement('h3');
+                title1.textContent = item.title1;
+                title1.className = 'title1';
+                resultContainer.appendChild(title1);
 
-                const image = document.createElement('img');
-                image.src = item.image9;
-                image.alt = '';
-                resultContainer.appendChild(image);
+                const title2 = document.createElement('h3');
+                title2.textContent = item.title1;
+                title2.className = 'title2';
+                resultContainer.appendChild(title2);
 
-                image.addEventListener('click', function () {
-                    window.open(item.url9, '_blank', 'fullscreen')
+                const title3 = document.createElement('h3');
+                title3.textContent = item.title1;
+                title3.className = 'title3';
+                resultContainer.appendChild(titl3);
+
+                const title4 = document.createElement('h3');
+                title4.textContent = item.title1;
+                title4.className = 'title4';
+                resultContainer.appendChild(title4);
+
+                const image1 = document.createElement('img');
+                image1.src = item.image1;
+                image1.alt = '';
+                image1.className = 'image1';
+                resultContainer.appendChild(image1);
+
+                const image2 = document.createElement('img');
+                image2.src = item.image1;
+                image2.alt = '';
+                image2.className = 'image2';
+                resultContainer.appendChild(image2);
+
+                const image3 = document.createElement('img');
+                image3.src = item.image1;
+                image3.alt = '';
+                image3.className = 'image3';
+                resultContainer.appendChild(image3);
+
+                const image4 = document.createElement('img');
+                image4.src = item.image1;
+                image4.alt = '';
+                image4.className = 'image3';
+                resultContainer.appendChild(image4);
+
+                image1.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
                 });
 
-                const description = document.createElement('p');
-                description.textContent = item.description9;
-                resultContainer.appendChild(description);
+                image2.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                image3.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                image4.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                const description1 = document.createElement('p');
+                description1.textContent = item.description1;
+                description1.className = 'description1';
+                resultContainer.appendChild(description1);
+
+                const description2 = document.createElement('p');
+                description2.textContent = item.description1;
+                description2.className = 'description2';
+                resultContainer.appendChild(description2);
+
+                const description3 = document.createElement('p');
+                description3.textContent = item.description1;
+                description3.className = 'description3';
+                resultContainer.appendChild(description3);
+
+                const description4 = document.createElement('p');
+                description4.textContent = item.description1;
+                description4.className = 'description4';
+                resultContainer.appendChild(description4);
             }
             else if (searchInput.value.toLowerCase() == "do or die") {
 
-                const title = document.createElement('h3');
-                title.textContent = item.title10;
-                resultContainer.appendChild(title);
+                const title1 = document.createElement('h3');
+                title1.textContent = item.title1;
+                title1.className = 'title1';
+                resultContainer.appendChild(title1);
 
-                const image = document.createElement('img');
-                image.src = item.image10;
-                image.alt = '';
-                resultContainer.appendChild(image);
+                const title2 = document.createElement('h3');
+                title2.textContent = item.title1;
+                title2.className = 'title2';
+                resultContainer.appendChild(title2);
 
-                image.addEventListener('click', function () {
-                    window.open(item.url10, '_blank', 'fullscreen')
+                const title3 = document.createElement('h3');
+                title3.textContent = item.title1;
+                title3.className = 'title3';
+                resultContainer.appendChild(titl3);
+
+                const title4 = document.createElement('h3');
+                title4.textContent = item.title1;
+                title4.className = 'title4';
+                resultContainer.appendChild(title4);
+
+                const image1 = document.createElement('img');
+                image1.src = item.image1;
+                image1.alt = '';
+                image1.className = 'image1';
+                resultContainer.appendChild(image1);
+
+                const image2 = document.createElement('img');
+                image2.src = item.image1;
+                image2.alt = '';
+                image2.className = 'image2';
+                resultContainer.appendChild(image2);
+
+                const image3 = document.createElement('img');
+                image3.src = item.image1;
+                image3.alt = '';
+                image3.className = 'image3';
+                resultContainer.appendChild(image3);
+
+                const image4 = document.createElement('img');
+                image4.src = item.image1;
+                image4.alt = '';
+                image4.className = 'image3';
+                resultContainer.appendChild(image4);
+
+                image1.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
                 });
 
-                const description = document.createElement('p');
-                description.textContent = item.description10;
-                resultContainer.appendChild(description);
+                image2.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                image3.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                image4.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                const description1 = document.createElement('p');
+                description1.textContent = item.description1;
+                description1.className = 'description1';
+                resultContainer.appendChild(description1);
+
+                const description2 = document.createElement('p');
+                description2.textContent = item.description1;
+                description2.className = 'description2';
+                resultContainer.appendChild(description2);
+
+                const description3 = document.createElement('p');
+                description3.textContent = item.description1;
+                description3.className = 'description3';
+                resultContainer.appendChild(description3);
+
+                const description4 = document.createElement('p');
+                description4.textContent = item.description1;
+                description4.className = 'description4';
+                resultContainer.appendChild(description4);
             }
             else if (searchInput.value.toLowerCase() == "모래 알갱이") {
     
-                const title = document.createElement('h3');
-                title.textContent = item.title11;
-                resultContainer.appendChild(title);
+                const title1 = document.createElement('h3');
+                title1.textContent = item.title1;
+                title1.className = 'title1';
+                resultContainer.appendChild(title1);
 
-                const image = document.createElement('img');
-                image.src = item.image11;
-                image.alt = '';
-                resultContainer.appendChild(image);
+                const title2 = document.createElement('h3');
+                title2.textContent = item.title1;
+                title2.className = 'title2';
+                resultContainer.appendChild(title2);
 
-                image.addEventListener('click', function () {
-                    window.open(item.url11, '_blank', 'fullscreen')
+                const title3 = document.createElement('h3');
+                title3.textContent = item.title1;
+                title3.className = 'title3';
+                resultContainer.appendChild(titl3);
+
+                const title4 = document.createElement('h3');
+                title4.textContent = item.title1;
+                title4.className = 'title4';
+                resultContainer.appendChild(title4);
+
+                const image1 = document.createElement('img');
+                image1.src = item.image1;
+                image1.alt = '';
+                image1.className = 'image1';
+                resultContainer.appendChild(image1);
+
+                const image2 = document.createElement('img');
+                image2.src = item.image1;
+                image2.alt = '';
+                image2.className = 'image2';
+                resultContainer.appendChild(image2);
+
+                const image3 = document.createElement('img');
+                image3.src = item.image1;
+                image3.alt = '';
+                image3.className = 'image3';
+                resultContainer.appendChild(image3);
+
+                const image4 = document.createElement('img');
+                image4.src = item.image1;
+                image4.alt = '';
+                image4.className = 'image3';
+                resultContainer.appendChild(image4);
+
+                image1.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
                 });
 
-                const description = document.createElement('p');
-                description.textContent = item.description11;
-                resultContainer.appendChild(description);
+                image2.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                image3.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                image4.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                const description1 = document.createElement('p');
+                description1.textContent = item.description1;
+                description1.className = 'description1';
+                resultContainer.appendChild(description1);
+
+                const description2 = document.createElement('p');
+                description2.textContent = item.description1;
+                description2.className = 'description2';
+                resultContainer.appendChild(description2);
+
+                const description3 = document.createElement('p');
+                description3.textContent = item.description1;
+                description3.className = 'description3';
+                resultContainer.appendChild(description3);
+
+                const description4 = document.createElement('p');
+                description4.textContent = item.description1;
+                description4.className = 'description4';
+                resultContainer.appendChild(description4);
             }
             else if (searchInput.value.toLowerCase() == "우리들의 블루스") {
 
-                const title = document.createElement('h3');
-                title.textContent = item.title12;
-                resultContainer.appendChild(title);
+                const title1 = document.createElement('h3');
+                title1.textContent = item.title1;
+                title1.className = 'title1';
+                resultContainer.appendChild(title1);
 
-                const image = document.createElement('img');
-                image.src = item.image12;
-                image.alt = '';
-                resultContainer.appendChild(image);
+                const title2 = document.createElement('h3');
+                title2.textContent = item.title1;
+                title2.className = 'title2';
+                resultContainer.appendChild(title2);
 
-                image.addEventListener('click', function () {
-                    window.open(item.url12, '_blank', 'fullscreen')
+                const title3 = document.createElement('h3');
+                title3.textContent = item.title1;
+                title3.className = 'title3';
+                resultContainer.appendChild(titl3);
+
+                const title4 = document.createElement('h3');
+                title4.textContent = item.title1;
+                title4.className = 'title4';
+                resultContainer.appendChild(title4);
+
+                const image1 = document.createElement('img');
+                image1.src = item.image1;
+                image1.alt = '';
+                image1.className = 'image1';
+                resultContainer.appendChild(image1);
+
+                const image2 = document.createElement('img');
+                image2.src = item.image1;
+                image2.alt = '';
+                image2.className = 'image2';
+                resultContainer.appendChild(image2);
+
+                const image3 = document.createElement('img');
+                image3.src = item.image1;
+                image3.alt = '';
+                image3.className = 'image3';
+                resultContainer.appendChild(image3);
+
+                const image4 = document.createElement('img');
+                image4.src = item.image1;
+                image4.alt = '';
+                image4.className = 'image3';
+                resultContainer.appendChild(image4);
+
+                image1.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
                 });
 
-                const description = document.createElement('p');
-                description.textContent = item.description12;
-                resultContainer.appendChild(description);
+                image2.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                image3.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                image4.addEventListener('click', function () {
+                    window.open(item.url1, '_blank', 'fullscreen')
+                });
+
+                const description1 = document.createElement('p');
+                description1.textContent = item.description1;
+                description1.className = 'description1';
+                resultContainer.appendChild(description1);
+
+                const description2 = document.createElement('p');
+                description2.textContent = item.description1;
+                description2.className = 'description2';
+                resultContainer.appendChild(description2);
+
+                const description3 = document.createElement('p');
+                description3.textContent = item.description1;
+                description3.className = 'description3';
+                resultContainer.appendChild(description3);
+
+                const description4 = document.createElement('p');
+                description4.textContent = item.description1;
+                description4.className = 'description4';
+                resultContainer.appendChild(description4);
             }
         });
     }
@@ -471,83 +1227,140 @@ document.addEventListener('DOMContentLoaded', function () {
         // 가상의 데이터 (실제로는 서버에서 데이터를 가져와야 함)
         const searchData = [
             {
-                title1: title[0],
-                image1: MusicImg[0],
-                description1: subtitle[0],
-                url1: './LE SSERAFIM.html'
+                title1_1: title[0],
+                title1_2: title[14],
+                title1_3: title[15],
+                title1_4: title[27],
+                image1_1: MusicImg[0],
+                image1_2: MusicImg[14],
+                image1_3: MusicImg[15],
+                image1_4: MusicImg[27],
+                description1_1: subtitle[0],
+                description1_2: subtitle[14],
+                description1_3: subtitle[15],
+                description1_4: subtitle[27],
+                url1_1: './LE SSERAFIM.html'
             },
             {
-                title2: title[1],
-                image2: MusicImg[1],
-                description2: subtitle[1],
+                title2_1: title[1],
+                title2_2: title[2],
+                title2_3: title[9],
+                title2_4: title[15],
+                image2_1: MusicImg[1],
+                image2_2: MusicImg[2],
+                image2_3: MusicImg[9],
+                image2_4: MusicImg[15],
+                description2_1: subtitle[1],
+                description2_2: subtitle[2],
+                description2_3: subtitle[9],
+                description2_4: subtitle[15],
                 url2: './Aespa.html'
             },
             {
-                title3: title[2],
-                image3: MusicImg[2],
-                description3: subtitle[2],
+                title3_1: title[2],
+                title3_2: title[27],
+                title3_3: title[12],
+                title3_4: title[17],
+                image3_1: MusicImg[2],
+                image3_2: MusicImg[27],
+                image3_3: MusicImg[12],
+                image3_4: MusicImg[17],
+                description3_1: subtitle[2],
+                description3_2: subtitle[12],
+                description3_3: subtitle[15],
+                description3_4: subtitle[17],
                 url3: './IVE.html'
             },
             {
-                title4: title[3],
-                image4: MusicImg[3],
-                description4: subtitle[3],
+                title4_1: title[3],
+                title4_2: title[14],
+                title4_3: title[15],
+                title4_4: title[20],
+                image4_1: MusicImg[3],
+                image4_2: MusicImg[14],
+                image4_3: MusicImg[15],
+                image4_4: MusicImg[20],
+                description4_1: subtitle[3],
+                description4_2: subtitle[14],
+                description4_3: subtitle[15],
+                description4_4: subtitle[20],
                 url4: './정국.html'
             },
             {
-                title5: title[4],
-                image5: MusicImg[4],
-                description5: subtitle[4],
+                title5_1: title[4],
+                title5_2: title[21],
+                title5_3: title[7],
+                title5_4: title[27],
+                image5_1: MusicImg[4],
+                image5_2: MusicImg[21],
+                image5_3: MusicImg[7],
+                image5_4: MusicImg[19],
+                description5_1: subtitle[4],
+                description5_2: subtitle[21],
+                description5_3: subtitle[7],
+                description5_4: subtitle[19],
                 url5: './AKMU.html'
             },
             {
-                title6: title[5],
-                image6: MusicImg[5],
-                description6: subtitle[5],
+                title6_1: title[5],
+                title6_2: title[13],
+                title6_3: title[16],
+                title6_4: title[6],
+                image6_1: MusicImg[5],
+                image6_2: MusicImg[13],
+                image6_3: MusicImg[16],
+                image6_4: MusicImg[6],
+                description6_1: subtitle[5],
+                description6_2: subtitle[13],
+                description6_3: subtitle[16],
+                description6_4: subtitle[6],
                 url6: './임영웅.html'
             },
             {
-                title7: title[6],
-                image7: MusicImg[6],
-                description7: subtitle[6],
+                title7_1: title[6],
+                title7_2: title[14],
+                title7_3: title[15],
+                title7_4: title[27],
+                image7_1: MusicImg[6],
+                image7_2: MusicImg[14],
+                image7_3: MusicImg[15],
+                image7_4: MusicImg[27],
+                description7_1: subtitle[6],
+                description7_2: subtitle[14],
+                description7_3: subtitle[15],
+                description7_4: subtitle[27],
                 url7: './AKMU.html'
             },
             {
-                title8: title[7],
-                image8: MusicImg[7],
-                description8: subtitle[7],
+                title8_1: title[7],
+                image8_1: MusicImg[7],
+                description8_1: subtitle[7],
                 url8: './제니.html'
             },
             {
-                title9: title[8],
-                image9: MusicImg[8],
-                description9: subtitle[8],
+                title9_1: title[8],
+                image9_1: MusicImg[8],
+                description9_1: subtitle[8],
                 url9: './박재정.html'
             },
             {
-                title10: title[9],
-                image10: MusicImg[9],
-                description10: subtitle[9],
+                title10_1: title[9],
+                image10_1: MusicImg[9],
+                description10_1: subtitle[9],
                 url10: './임영웅.html'
             },
             {
-                title11: title[10],
-                image11: MusicImg[10],
-                description11: subtitle[10],
+                title11_1: title[10],
+                image11_1: MusicImg[10],
+                description11_1: subtitle[10],
                 url11: './임영웅.html'
             },
             {
-                title12: title[11],
-                image12: MusicImg[11],
-                description12: subtitle[11],
+                title12_1: title[11],
+                image12_1: MusicImg[11],
+                description12_1: subtitle[11],
                 url12: './임영웅.html'
-            },
-            {
-                title13: title[12],
-                image13: MusicImg[12],
-                description13: subtitle[12],
-                url13: './정국.html'
-            },
+            }
         ];
 
         displayResults(searchData);
