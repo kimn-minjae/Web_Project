@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const title3 = document.createElement('h3');
                 title3.textContent = item.title1_3;
                 title3.className = 'title3';
-                resultContainer.appendChild(titl3);
+                resultContainer.appendChild(title3);
 
                 const title4 = document.createElement('h3');
                 title4.textContent = item.title1_4;
@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const image4 = document.createElement('img');
                 image4.src = item.image1_4;
                 image4.alt = '';
-                image4.className = 'image3';
+                image4.className = 'image4';
                 resultContainer.appendChild(image4);
 
                 image1.addEventListener('click', function () {
