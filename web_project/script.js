@@ -120,8 +120,10 @@ function playNextTrack() {
 function loadTrack() {
     audio.src = playlist[currentTrackIndex];
     audio.load();
-    playButton.innerText = '음악 재생';
-    audio.play();
+    if (playButton.style.display == 'none') {
+        playButton.innerText = '음악 재생';
+        audio.play();
+    }
 }
 
 function handleSongEnd() {
