@@ -4,6 +4,45 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow: hidden;
+}
+
+#search {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    width: 340px;
+    background-color: #303446;
+}
+
+#searchInputContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 20px;
+    overflow: visible;
+}
+
+#searchInput {
+    background-color: #00000000;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+}
+
+#resultList li {
+    background-color: #FFFFFF;
+}
+
+#resultList li:hover {
+    background-color: #b6b6b6;
+}
+
 footer {
     position: absolute;
     display: flex;
@@ -12,7 +51,7 @@ footer {
     gap: 2%;
     bottom: 0;
     width: 100%;
-    padding: 15px 0;
+    height: 100px;
     background-color: #414559;
 }
 
@@ -33,6 +72,7 @@ footer>div {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    user-select: none;
 
 }
 
@@ -139,7 +179,8 @@ footer #music_info #music_info_texts {
 #playButton,
 #repeatButton,
 #prevButton,
-#nextButton {
+#nextButton,
+#pauseButton {
     cursor: pointer;
     color: white;
     border: none;
@@ -278,4 +319,11 @@ footer #music_info #music_info_texts {
     top: 350px;
     max-width: 500px; /* 이미지의 최대 너비를 조절 */
     height: auto; /* 높이를 자동으로 조절하여 비율 유지 */
+}
+
+
+@media (max-width: 768px) {
+    #footer_div2 {
+        display: none;
+    }
 }

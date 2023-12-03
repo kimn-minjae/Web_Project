@@ -4,6 +4,7 @@ const currentProgress = document.getElementById('currentProgress');
 const volumeBar = document.getElementById('volumeBar');
 const currentVolume = document.getElementById('currentVolume');
 const playButton = document.getElementById('playButton');
+const pauseButton = document.getElementById('pauseButton');
 const volumeControl = document.getElementById('volumeControl');
 const repeatButton = document.getElementById('repeatButton');
 const prevButton = document.getElementById('prevButton');
@@ -14,16 +15,17 @@ const TitleDisplay = document.getElementById('Title');
 const SubtitleDisplay = document.getElementById('Subtitle')
 
 const playlist = ["music/Perfect night", "music/Drama.mp3", "music/Baddie.mp3", "music/Seven.mp3", "music/Love Lee.mp3", "music/사랑은 늘 도망가.mp3", "music/후라이의 꿈.mp3", "music/You&me.mp3", "music/헤어지자 말해요.mp3", "music/Do or die.mp3", "music/모래 알갱이.mp3", "music/우리들의 블루스.mp3", "music/Either Way.mp3", "music/인사.mp3", "music/Super Shy.mp3", "music/Smoke.mp3", "music/사막에서 꽃을 피우듯.mp3", "music/ETA.mp3", "music/첫눈.mp3", "music/그대만 있다면.mp3", "music/Standing next to you.mp3", "music/All I Want for Christmas Is You.mp3", "music/퀸카.mp3", "music/Get A Guitar.mp3", "music/별 떨어진다.mp3", "music/Ditto.mp3", "music/Fast Forward.mp3", "music/Hype Boy.mp3"];
-const title = ["Perfect night","Drama", "Baddie", "Seven", "Love Lee", "사랑은 늘 도망가", "후라이의 꿈", "You&me", "헤어지자 말해요", "Do or die", "모래 알갱이", "우리들의 블루스", "Either Way", "인사", "Super Shy", "Smoke (Prod. Dynamicduo, Padi)", "사막에서 꽃을 피우듯", "ETA", "첫 눈", "그대만 있다면 (여름날 우리 X 너드커넥션 (Nerd Connection))", "Standing Next to You", "All I Want for Christmas Is You", "퀸카 (Queencard)", "Get A Guitar", "별 떨어진다 (I Do)", "Ditto", "Fast Forward", "Hype Boy"];
-const subtitle = ["LE SSERAFIM (르세라핌)", "aespa", "IVE (아이브)", "정국", "AKMU (악뮤)", "임영웅", "AKMU (악뮤)", "제니 (JENNIE)", "박재정", "임영웅","임영웅","임영웅", "IVE (아이브)", "범진", "NewJeans", "다이나믹 듀오, 이영지", "우디 (Woody)", "NewJeans", "EXO", "너드커넥션 (Nerd Connection)", "정국", "Mariah Carey", "(여자)아이들", "RIIZE", "디오 (D.O.)", "NewJeans", "전소미", "NewJeans"];
-const MusicImg = ["icon/perfect night.jpg", "icon/Drama.webp", "icon/Baddie.webp","icon/Seven.webp", "icon/Love Lee.png", "icon/사랑은 늘 도망가.png", "icon/Love Lee.png", "icon/You & me.avif", "icon/헤어지자 말해요.jpg", "icon/Do or die.png", "icon/모래 알갱이.png", "icon/우리들의 블루스.png", "icon/Baddie.webp", "icon/인사.jpg", "icon/super shy.webp", "icon/smoke.png", "icon/사막에서 꽃을 피우듯.png", "icon/super shy.webp", "icon/첫눈.jpg", "icon/그대만 있다면.jpg", "icon/standing next to you.jpg", "icon/all i want for christmas is you.png", "icon/퀸카.jpg", "icon/get a guitar.webp", "icon/별 떨어진다.png", "icon/ditto.webp", "icon/fast forward.webp", "icon/hype boy.svg"];
+const title = ["Perfect night", "Drama", "Baddie", "Seven", "Love Lee", "사랑은 늘 도망가", "후라이의 꿈", "You&me", "헤어지자 말해요", "Do or die", "모래 알갱이", "우리들의 블루스", "Either Way", "인사", "Super Shy", "Smoke (Prod. Dynamicduo, Padi)", "사막에서 꽃을 피우듯", "ETA", "첫 눈", "그대만 있다면 (여름날 우리 X 너드커넥션 (Nerd Connection))", "Standing Next to You", "All I Want for Christmas Is You", "퀸카 (Queencard)", "Get A Guitar", "별 떨어진다 (I Do)", "Ditto", "Fast Forward", "Hype Boy"];
+const subtitle = ["LE SSERAFIM (르세라핌)", "aespa", "IVE (아이브)", "정국", "AKMU (악뮤)", "임영웅", "AKMU (악뮤)", "제니 (JENNIE)", "박재정", "임영웅", "임영웅", "임영웅", "IVE (아이브)", "범진", "NewJeans", "다이나믹 듀오, 이영지", "우디 (Woody)", "NewJeans", "EXO", "너드커넥션 (Nerd Connection)", "정국", "Mariah Carey", "(여자)아이들", "RIIZE", "디오 (D.O.)", "NewJeans", "전소미", "NewJeans"];
+const MusicImg = ["icon/perfect night.jpg", "icon/Drama.webp", "icon/Baddie.webp", "icon/Seven.webp", "icon/Love Lee.png", "icon/사랑은 늘 도망가.png", "icon/Love Lee.png", "icon/You & me.avif", "icon/헤어지자 말해요.jpg", "icon/Do or die.png", "icon/모래 알갱이.png", "icon/우리들의 블루스.png", "icon/Baddie.webp", "icon/인사.jpg", "icon/super shy.webp", "icon/smoke.png", "icon/사막에서 꽃을 피우듯.png", "icon/super shy.webp", "icon/첫눈.jpg", "icon/그대만 있다면.jpg", "icon/standing next to you.jpg", "icon/all i want for christmas is you.png", "icon/퀸카.jpg", "icon/get a guitar.webp", "icon/별 떨어진다.png", "icon/ditto.webp", "icon/fast forward.webp", "icon/hype boy.svg"];
 let currentTrackIndex = 0;
 let currentTitleIndex = 0;
 let currentSubtitleIndex = 0;
 let currentImg = 0;
 let isRepeat = false;
 
-playButton.addEventListener('click', togglePlay);
+playButton.addEventListener('click', playMusic);
+pauseButton.addEventListener('click', pauseMusic);
 volumeControl.addEventListener('click', toggleVolumeBarVisibility);
 repeatButton.addEventListener('click', toggleRepeat);
 prevButton.addEventListener('click', playPrevTrack);
@@ -46,18 +48,22 @@ volumeBar.addEventListener('click', (event) => {
     audio.volume = newVolume;
 });
 
-function togglePlay() {
-    if (audio.paused) {
-        audio.play();
-        playButton.innerText = '일시 정지';
-    } else {
-        audio.pause();
-        playButton.innerText = '음악 재생';
-    }
+function playMusic() {
+    audio.play();
+    playButton.innerText = '일시 정지';
+    pauseButton.style.display = 'block';
+    playButton.style.display = 'none';
+}
+
+function pauseMusic() {
+    audio.pause();
+    playButton.innerText = '음악 재생';
+    pauseButton.style.display = 'none';
+    playButton.style.display = 'block';
 }
 
 function toggleVolumeBarVisibility() {
-    const isVisible = volumeBar.style.display === 'block';
+    const isVisible = (volumeBar.style.display === 'block');
     volumeBar.style.display = isVisible ? 'none' : 'block';
 }
 
@@ -75,7 +81,7 @@ function playPrevTrack() {
     currentImg = (currentImg - 1 + MusicImg.length) % MusicImg.length;
     loadTrack();
     document.getElementById('music_info_image').src = MusicImg[currentImg];
-    if(currentTitleIndex == 0 && currentSubtitleIndex == 0) {
+    if (currentTitleIndex == 0 && currentSubtitleIndex == 0) {
 
         currentTitleIndex = 27;
         currentSubtitleIndex = 27;
@@ -88,7 +94,7 @@ function playPrevTrack() {
         currentSubtitleIndex = currentSubtitleIndex - 1;
         Title.innerText = `${title[currentTitleIndex]}`;
         Subtitle.innerText = `${subtitle[currentSubtitleIndex]}`;
-        
+
     }
 }
 
@@ -97,7 +103,7 @@ function playNextTrack() {
     currentImg = (currentImg + 1) % MusicImg.length;
     loadTrack();
     document.getElementById('music_info_image').src = MusicImg[currentImg];
-    if (currentTitleIndex == 27 && currentSubtitleIndex == 27){
+    if (currentTitleIndex == 27 && currentSubtitleIndex == 27) {
         currentTitleIndex = 0;
         currentSubtitleIndex = 0;
         Title.innerText = `${title[currentTitleIndex]}`;
@@ -173,30 +179,33 @@ document.addEventListener('DOMContentLoaded', function () {
         "사랑은 늘 도망가",
         "후라이의 꿈",
         "You&me",
-        "헤어지자 말해요", 
-        "Do or die", 
-        "모래 알갱이", 
-        "우리들의 블루스", 
-        "Either Way", 
-        "인사", 
-        "Super Shy", 
-        "Smoke (Prod. Dynamicduo, Padi)", 
-        "사막에서 꽃을 피우듯", 
-        "ETA", 
-        "첫 눈", 
-        "그대만 있다면 (여름날 우리 X 너드커넥션 (Nerd Connection))", 
-        "Standing Next to You", 
-        "All I Want for Christmas Is You", 
-        "퀸카 (Queencard)", 
-        "Get A Guitar", 
-        "별 떨어진다 (I Do)", 
-        "Ditto", 
-        "Fast Forward", 
+        "헤어지자 말해요",
+        "Do or die",
+        "모래 알갱이",
+        "우리들의 블루스",
+        "Either Way",
+        "인사",
+        "Super Shy",
+        "Smoke (Prod. Dynamicduo, Padi)",
+        "사막에서 꽃을 피우듯",
+        "ETA",
+        "첫 눈",
+        "그대만 있다면 (여름날 우리 X 너드커넥션 (Nerd Connection))",
+        "Standing Next to You",
+        "All I Want for Christmas Is You",
+        "퀸카 (Queencard)",
+        "Get A Guitar",
+        "별 떨어진다 (I Do)",
+        "Ditto",
+        "Fast Forward",
         "Hype Boy"
     ];
 
     function displayResults(results) {
         resultList.innerHTML = '';
+        if (results == -1) {
+            resultList.innerHTML = '';
+        }
         for (let i = 0; i < Math.min(results.length, maxResults); i++) {
             const result = results[i];
             const listItem = document.createElement('li');
@@ -212,9 +221,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     searchInput.addEventListener('input', function () {
-        const inputValue = searchInput.value.toLowerCase();
-        const filteredResults = data.filter(item => item.toLowerCase().includes(inputValue));
-        displayResults(filteredResults);
+        const input = searchInput.value;
+        if (input.length == 0) {
+            displayResults(-1);
+        }
+        else {
+            const inputValue = input.toLowerCase();
+            const filteredResults = data.filter(item => item.toLowerCase().includes(inputValue));
+            displayResults(filteredResults);
+        }
     });
 
     // Close the result list when clicking outside the input and results
@@ -1057,7 +1072,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 resultContainer.appendChild(description4);
             }
             else if (searchInput.value.toLowerCase() == "모래 알갱이") {
-    
+
                 const title1 = document.createElement('h3');
                 title1.textContent = item.title1;
                 title1.className = 'title1';

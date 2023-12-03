@@ -9,6 +9,21 @@
 </head>
 
 <body>
+    <section id="search">
+        <div id="searchInputContainer">
+            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M4.60906 30.936L2.73706 28.92L8.59306 23.16C7.72906 22.104 7.07306 20.984 6.62506 19.8C6.20906 18.616 6.00106 17.352 6.00106 16.008C6.00106 13.96 6.49706 12.104 7.48906 10.44C8.51306 8.744 9.87306 7.4 11.5691 6.408C13.2651 5.384 15.1211 4.872 17.1371 4.872C19.1851 4.872 21.0411 5.384 22.7051 6.408C24.4011 7.4 25.7451 8.744 26.7371 10.44C27.7611 12.104 28.2731 13.96 28.2731 16.008C28.2731 18.024 27.7611 19.88 26.7371 21.576C25.7451 23.272 24.4011 24.632 22.7051 25.656C21.0411 26.648 19.1851 27.144 17.1371 27.144C15.9211 27.144 14.7691 26.968 13.6811 26.616C12.5931 26.264 11.5691 25.736 10.6091 25.032L4.60906 30.936ZM17.1371 24.12C18.6091 24.12 19.9531 23.768 21.1691 23.064C22.4171 22.328 23.4091 21.352 24.1451 20.136C24.8811 18.888 25.2491 17.512 25.2491 16.008C25.2491 14.504 24.8811 13.144 24.1451 11.928C23.4091 10.68 22.4331 9.704 21.2171 9C20.0011 8.264 18.6411 7.896 17.1371 7.896C15.6331 7.896 14.2571 8.264 13.0091 9C11.7931 9.704 10.8171 10.68 10.0811 11.928C9.37706 13.144 9.02506 14.504 9.02506 16.008C9.02506 17.512 9.37706 18.888 10.0811 20.136C10.8171 21.352 11.7931 22.328 13.0091 23.064C14.2571 23.768 15.6331 24.12 17.1371 24.12Z"
+                    fill="white" />
+            </svg>
+            <input type="text" id="searchInput" placeholder="검색어를 입력하세요">
+        </div>
+        <div id="resultContainer">
+            <ul id="resultList"></ul>
+        </div>
+        <button id="searchButton">검색</button>
+    </section>
+
     <audio id="audioPlayer">
         <source src="./music/Perfect night.mp3" type="audio/mp3">
         Your browser does not support the audio element.
@@ -29,6 +44,7 @@
                 <div id="currentProgress"></div>
             </div>
         </div>
+
         <div id="footer_div2">
             <div id="buttons">
                 <svg id="prevButton" width="26" height="25" viewBox="0 0 26 25" fill="none"
@@ -43,6 +59,12 @@
                     <path d="M26.2415 16L-0.00854492 31.1554L-0.00854492 0.844556L26.2415 16Z" fill="white"
                         fill-opacity="0.75" />
                 </svg>
+                <svg style="display: none;" id="pauseButton" width="35" height="35" viewBox="0 0 35 35" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5" y="0" width="10" height="35" fill="white" />
+                    <rect x="22" y="0" width="10" height="35" fill="white" />
+                </svg>
+
                 <svg id="nextButton" width="26" height="25" viewBox="0 0 26 25" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M25.7014 12.5L6.95142 23.3253L6.95142 1.67468L25.7014 12.5Z" fill="white"
@@ -57,9 +79,9 @@
                 </svg>
             </div>
             <div id="volume_control">
-                <img src="./icon/volume.png" alt="" id="volumeControl">
+                <img src="./icon/volume.png" id="volumeControl" style="display: block;">
                 <div id="volumeBar">
-                    <div id="currentVolume"></div>
+                    <div id="currentVolume" style="width: 100%;"></div>
                 </div>
             </div>
             <div id="time">
@@ -68,12 +90,8 @@
             </div>
         </div>
     </footer>
-    <input type="text" id="searchInput" placeholder="검색어를 입력하세요">
-    <button id="searchButton">검색</button>
-    <div id="resultContainer"></div>
-    <ul id="resultList"></ul>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
