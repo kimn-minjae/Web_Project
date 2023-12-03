@@ -230,15 +230,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 resultContainer.appendChild(image);
 
                 image.addEventListener('click', function () {
-                    resultContainer.innerHTML = ''; // 이전 요소 삭제
-
-                    // 예: 클릭된 이미지의 customContent로 새로운 요소 생성
-                    const newContent = document.createElement('h4');
-                    newContent.textContent = item.content1_1;
-                    newContent.textContent = item.content1_2;
-
-                    // 새로운 요소를 결과 컨테이너에 추가
-                    resultContainer.appendChild(newContent);
+                    window.open(item.url1, '_blank', 'fullscreen')
                 });
 
                 const description = document.createElement('p');
@@ -257,6 +249,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 image.alt = '';
                 resultContainer.appendChild(image);
 
+                image.addEventListener('click', function () {
+                    window.open(item.url2, '_blank', 'fullscreen')
+                });
+
                 const description = document.createElement('p');
                 description.textContent = item.description2;
                 resultContainer.appendChild(description);
@@ -271,6 +267,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 image.src = item.image3;
                 image.alt = '';
                 resultContainer.appendChild(image);
+
+                image.addEventListener('click', function () {
+                    window.open(item.url3, '_blank', 'fullscreen')
+                });
 
                 const description = document.createElement('p');
                 description.textContent = item.description3;
@@ -287,6 +287,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 image.alt = '';
                 resultContainer.appendChild(image);
 
+                image.addEventListener('click', function () {
+                    window.open(item.url4, '_blank', 'fullscreen')
+                });
+
                 const description = document.createElement('p');
                 description.textContent = item.description4;
                 resultContainer.appendChild(description);
@@ -301,6 +305,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 image.src = item.image5;
                 image.alt = '';
                 resultContainer.appendChild(image);
+
+                image.addEventListener('click', function () {
+                    window.open(item.url5, '_blank', 'fullscreen')
+                });
 
                 const description = document.createElement('p');
                 description.textContent = item.description5;
@@ -318,6 +326,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 image.alt = '';
                 resultContainer.appendChild(image);
 
+                image.addEventListener('click', function () {
+                    window.open(item.url6, '_blank', 'fullscreen')
+                });
+
                 const description = document.createElement('p');
                 description.textContent = item.description6;
                 resultContainer.appendChild(description);
@@ -332,6 +344,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 image.src = item.image7;
                 image.alt = '';
                 resultContainer.appendChild(image);
+
+                image.addEventListener('click', function () {
+                    window.open(item.url7, '_blank', 'fullscreen')
+                });
 
                 const description = document.createElement('p');
                 description.textContent = item.description7;
@@ -348,6 +364,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 image.alt = '';
                 resultContainer.appendChild(image);
 
+                image.addEventListener('click', function () {
+                    window.open(item.url8, '_blank', 'fullscreen')
+                });
+
                 const description = document.createElement('p');
                 description.textContent = item.description8;
                 resultContainer.appendChild(description);
@@ -362,6 +382,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 image.src = item.image9;
                 image.alt = '';
                 resultContainer.appendChild(image);
+
+                image.addEventListener('click', function () {
+                    window.open(item.url9, '_blank', 'fullscreen')
+                });
 
                 const description = document.createElement('p');
                 description.textContent = item.description9;
@@ -378,6 +402,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 image.alt = '';
                 resultContainer.appendChild(image);
 
+                image.addEventListener('click', function () {
+                    window.open(item.url10, '_blank', 'fullscreen')
+                });
+
                 const description = document.createElement('p');
                 description.textContent = item.description10;
                 resultContainer.appendChild(description);
@@ -392,6 +420,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 image.src = item.image11;
                 image.alt = '';
                 resultContainer.appendChild(image);
+
+                image.addEventListener('click', function () {
+                    window.open(item.url11, '_blank', 'fullscreen')
+                });
 
                 const description = document.createElement('p');
                 description.textContent = item.description11;
@@ -408,6 +440,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 image.alt = '';
                 resultContainer.appendChild(image);
 
+                image.addEventListener('click', function () {
+                    window.open(item.url12, '_blank', 'fullscreen')
+                });
+
                 const description = document.createElement('p');
                 description.textContent = item.description12;
                 resultContainer.appendChild(description);
@@ -422,68 +458,79 @@ document.addEventListener('DOMContentLoaded', function () {
                 title1: title[0],
                 image1: MusicImg[0],
                 description1: subtitle[0],
-                content1_1: 'LE SSERAFIM (르세라핌)은 대한민국의 걸그룹이다. 세상의 시선에 흔들리지 않고 두려움 없이 앞으로 나아가겠다는 자기 확신과 강한 의지를 바탕으로 비상할 준비를 마친 그룹은 2022년 5월, 대망의 첫 미니 앨범 [FEARLESS]를 공개하며 가요계에 출사표를 던졌다. 방시혁 총괄 프로듀서의 진두지휘 아래 얼터너티브 팝, 디스코-펑크, R&B 등 다양한 장르의 음악이 그룹만의 스타일로 탄생했고 멤버 김채원과 허윤진은 수록곡 <Blue Flame>의 작사에 참여하는 등 앨범에 각별한 애정을 내비치며 새로운 여정의 설렘과 각오를 담았다.',
-                content1_2: '데뷔와 동시에 각종 신기록을 쏟아낸 그룹은 같은 해 10월 두 번째 EP [ANTIFRAGILE]로 성공 가도를 이어가며 강력한 팬덤을 구축해 나갔다. 2023년 5월에는 첫 번째 정규 앨범 [UNFORGIVEN]을 발매, 타인의 평가에 개의치 않고 르세라핌 만의 길을 개척하겠다는 각오를 주제로 삼았고 월드 클래스 뮤지션들이 참여해 그룹의 위상을 입증했다.',
+                url1: './LE SSERAFIM.html'
             },
             {
                 title2: title[1],
                 image2: MusicImg[1],
-                description2: subtitle[1]
+                description2: subtitle[1],
+                url2: './Aespa.html'
             },
             {
                 title3: title[2],
                 image3: MusicImg[2],
-                description3: subtitle[2]
+                description3: subtitle[2],
+                url3: './IVE.html'
             },
             {
                 title4: title[3],
                 image4: MusicImg[3],
-                description4: subtitle[3]
+                description4: subtitle[3],
+                url4: './정국.html'
             },
             {
                 title5: title[4],
                 image5: MusicImg[4],
-                description5: subtitle[4]
+                description5: subtitle[4],
+                url5: './AKMU.html'
             },
             {
                 title6: title[5],
                 image6: MusicImg[5],
-                description6: subtitle[5]
+                description6: subtitle[5],
+                url6: './임영웅.html'
             },
             {
                 title7: title[6],
                 image7: MusicImg[6],
-                description7: subtitle[6]
+                description7: subtitle[6],
+                url7: './AKMU.html'
             },
             {
                 title8: title[7],
                 image8: MusicImg[7],
-                description8: subtitle[7]
+                description8: subtitle[7],
+                url8: './제니.html'
             },
             {
                 title9: title[8],
                 image9: MusicImg[8],
-                description9: subtitle[8]
+                description9: subtitle[8],
+                url9: './박재정.html'
             },
             {
                 title10: title[9],
                 image10: MusicImg[9],
-                description10: subtitle[9]
+                description10: subtitle[9],
+                url10: './임영웅.html'
             },
             {
                 title11: title[10],
                 image11: MusicImg[10],
-                description11: subtitle[10]
+                description11: subtitle[10],
+                url11: './임영웅.html'
             },
             {
                 title12: title[11],
                 image12: MusicImg[11],
-                description12: subtitle[11]
+                description12: subtitle[11],
+                url12: './임영웅.html'
             },
             {
                 title13: title[12],
                 image13: MusicImg[12],
-                description13: subtitle[12]
+                description13: subtitle[12],
+                url13: './정국.html'
             },
         ];
 
