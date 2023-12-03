@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const title3 = document.createElement('h3');
                 title3.textContent = item.title2_3;
                 title3.className = 'title3';
-                resultContainer.appendChild(titl3);
+                resultContainer.appendChild(title3);
 
                 const title4 = document.createElement('h3');
                 title4.textContent = item.title2_4;
@@ -360,7 +360,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const image4 = document.createElement('img');
                 image4.src = item.image2_4;
                 image4.alt = '';
-                image4.className = 'image3';
+                image4.className = 'image4';
                 resultContainer.appendChild(image4);
 
                 image1.addEventListener('click', function () {
@@ -414,7 +414,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const title3 = document.createElement('h3');
                 title3.textContent = item.title3_3;
                 title3.className = 'title3';
-                resultContainer.appendChild(titl3);
+                resultContainer.appendChild(title3);
 
                 const title4 = document.createElement('h3');
                 title4.textContent = item.title3_4;
@@ -442,7 +442,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const image4 = document.createElement('img');
                 image4.src = item.image3_4;
                 image4.alt = '';
-                image4.className = 'image3';
+                image4.className = 'image4';
                 resultContainer.appendChild(image4);
 
                 image1.addEventListener('click', function () {
@@ -462,22 +462,22 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
 
                 const description1 = document.createElement('p');
-                description1.textContent = item.description1;
+                description1.textContent = item.description3_1;
                 description1.className = 'description1';
                 resultContainer.appendChild(description1);
 
                 const description2 = document.createElement('p');
-                description2.textContent = item.description1;
+                description2.textContent = item.description3_2;
                 description2.className = 'description2';
                 resultContainer.appendChild(description2);
 
                 const description3 = document.createElement('p');
-                description3.textContent = item.description1;
+                description3.textContent = item.description3_3;
                 description3.className = 'description3';
                 resultContainer.appendChild(description3);
 
                 const description4 = document.createElement('p');
-                description4.textContent = item.description1;
+                description4.textContent = item.description3_4;
                 description4.className = 'description4';
                 resultContainer.appendChild(description4);
             }
@@ -496,7 +496,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const title3 = document.createElement('h3');
                 title3.textContent = item.title1;
                 title3.className = 'title3';
-                resultContainer.appendChild(titl3);
+                resultContainer.appendChild(title3);
 
                 const title4 = document.createElement('h3');
                 title4.textContent = item.title1;
@@ -524,7 +524,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const image4 = document.createElement('img');
                 image4.src = item.image1;
                 image4.alt = '';
-                image4.className = 'image3';
+                image4.className = 'image4';
                 resultContainer.appendChild(image4);
 
                 image1.addEventListener('click', function () {
@@ -578,7 +578,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const title3 = document.createElement('h3');
                 title3.textContent = item.title1;
                 title3.className = 'title3';
-                resultContainer.appendChild(titl3);
+                resultContainer.appendChild(title3);
 
                 const title4 = document.createElement('h3');
                 title4.textContent = item.title1;
@@ -606,7 +606,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const image4 = document.createElement('img');
                 image4.src = item.image1;
                 image4.alt = '';
-                image4.className = 'image3';
+                image4.className = 'image4';
                 resultContainer.appendChild(image4);
 
                 image1.addEventListener('click', function () {
@@ -661,7 +661,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const title3 = document.createElement('h3');
                 title3.textContent = item.title1;
                 title3.className = 'title3';
-                resultContainer.appendChild(titl3);
+                resultContainer.appendChild(title3);
 
                 const title4 = document.createElement('h3');
                 title4.textContent = item.title1;
@@ -689,7 +689,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const image4 = document.createElement('img');
                 image4.src = item.image1;
                 image4.alt = '';
-                image4.className = 'image3';
+                image4.className = 'image4';
                 resultContainer.appendChild(image4);
 
                 image1.addEventListener('click', function () {
@@ -743,7 +743,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const title3 = document.createElement('h3');
                 title3.textContent = item.title1;
                 title3.className = 'title3';
-                resultContainer.appendChild(titl3);
+                resultContainer.appendChild(title3);
 
                 const title4 = document.createElement('h3');
                 title4.textContent = item.title1;
@@ -771,7 +771,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const image4 = document.createElement('img');
                 image4.src = item.image1;
                 image4.alt = '';
-                image4.className = 'image3';
+                image4.className = 'image4';
                 resultContainer.appendChild(image4);
 
                 image1.addEventListener('click', function () {
@@ -825,7 +825,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const title3 = document.createElement('h3');
                 title3.textContent = item.title1;
                 title3.className = 'title3';
-                resultContainer.appendChild(titl3);
+                resultContainer.appendChild(title3);
 
                 const title4 = document.createElement('h3');
                 title4.textContent = item.title1;
@@ -853,7 +853,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const image4 = document.createElement('img');
                 image4.src = item.image1;
                 image4.alt = '';
-                image4.className = 'image3';
+                image4.className = 'image4';
                 resultContainer.appendChild(image4);
 
                 image1.addEventListener('click', function () {
@@ -907,7 +907,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const title3 = document.createElement('h3');
                 title3.textContent = item.title1;
                 title3.className = 'title3';
-                resultContainer.appendChild(titl3);
+                resultContainer.appendChild(title3);
 
                 const title4 = document.createElement('h3');
                 title4.textContent = item.title1;
@@ -935,7 +935,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const image4 = document.createElement('img');
                 image4.src = item.image1;
                 image4.alt = '';
-                image4.className = 'image3';
+                image4.className = 'image4';
                 resultContainer.appendChild(image4);
 
                 image1.addEventListener('click', function () {
@@ -1266,8 +1266,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 image3_3: MusicImg[12],
                 image3_4: MusicImg[17],
                 description3_1: subtitle[2],
-                description3_2: subtitle[12],
-                description3_3: subtitle[15],
+                description3_2: subtitle[27],
+                description3_3: subtitle[12],
                 description3_4: subtitle[17],
                 url3: './IVE.html'
             },
