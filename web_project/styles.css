@@ -23,9 +23,23 @@ body>div {
     position: fixed;
     display: flex;
     flex-direction: column;
-    min-width: 300px;
+    min-width: 330px;
     height: 100%;
     background-color: #303446;
+}
+
+#searchButton{
+    border: #000000 1px solid;
+    position: absolute;
+    top: 0px;
+    margin-left: 260px;
+    text-align: center;
+    width: 60px;
+    height: 50px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #000000;
+    cursor: pointer;
 }
 
 #searchInputContainer {
@@ -55,7 +69,10 @@ body>div {
 }
 
 #resultList li {
-    background-color: #FFFFFF;
+    border: #000000 1px solid;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #FFFFFF;
     z-index: 999;
 }
 
@@ -71,7 +88,7 @@ main {
     flex-direction: column;
     align-items: center;
     background-color: #1E1E2E;
-    width: calc(100% - 300px);
+    width: calc(100% - 330px);
     height: 100%;
 }
 
@@ -90,11 +107,50 @@ main {
     margin-top: 120px;
 }
 
+#chart2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 120px;
+}
+
+#chart2>div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#chart2 h1 {
+    color: #FFFFFF;
+    font-size: 18pt;
+    font-weight: bold;
+    width: 50%;
+    margin-left: 80px;
+}
+
+#chart2 h2 {
+    color: #FFFFFF;
+    font-size: 16pt;
+    font-weight: normal;
+    width: 80%;
+}
+
 #chart>h1 {
     margin-bottom: 30px;
     font-family: 'Inter', sans-serif;
     color: #FFFFFF;
     font-size: 20pt;
+}
+
+.chart_items2 {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.chart_items2 img {
+    width: 66px;
+    height: auto;
+    border-radius: 8px;
 }
 
 #chart>div {
@@ -334,126 +390,7 @@ footer #music_info #music_info_texts {
     background-color: #f5f5f5;
 }
 
-.title1 {
-    position: absolute;
-    left: 800px;
-    max-width: 100px;
-    /* 이미지의 최대 너비를 조절 */
-    height: auto;
-    /* 높이를 자동으로 조절하여 비율 유지 */
-}
 
-.image1 {
-    position: absolute;
-    left: 600px;
-    max-width: 66px;
-    /* 이미지의 최대 너비를 조절 */
-    max-height: 66px;
-    height: auto;
-    /* 높이를 자동으로 조절하여 비율 유지 */
-}
-
-.description1 {
-    position: absolute;
-    left: 1200px;
-    max-width: 500px;
-    /* 이미지의 최대 너비를 조절 */
-    height: auto;
-    /* 높이를 자동으로 조절하여 비율 유지 */
-}
-
-.title2 {
-    position: absolute;
-    left: 800px;
-    top: 150px;
-    max-width: 100px;
-    /* 이미지의 최대 너비를 조절 */
-    height: auto;
-    /* 높이를 자동으로 조절하여 비율 유지 */
-}
-
-.image2 {
-    position: absolute;
-    left: 600px;
-    top: 150px;
-    max-width: 66px;
-    /* 이미지의 최대 너비를 조절 */
-    max-height: 66px;
-    height: auto;
-    /* 높이를 자동으로 조절하여 비율 유지 */
-}
-
-.description2 {
-    position: absolute;
-    left: 1200px;
-    top: 150px;
-    max-width: 500px;
-    /* 이미지의 최대 너비를 조절 */
-    height: auto;
-    /* 높이를 자동으로 조절하여 비율 유지 */
-}
-
-.title3 {
-    position: absolute;
-    left: 800px;
-    top: 250px;
-    max-width: 100px;
-    /* 이미지의 최대 너비를 조절 */
-    height: auto;
-    /* 높이를 자동으로 조절하여 비율 유지 */
-}
-
-.image3 {
-    position: absolute;
-    left: 600px;
-    top: 250px;
-    max-width: 66px;
-    /* 이미지의 최대 너비를 조절 */
-    max-height: 66px;
-    height: auto;
-    /* 높이를 자동으로 조절하여 비율 유지 */
-}
-
-.description3 {
-    position: absolute;
-    left: 1200px;
-    top: 250px;
-    max-width: 500px;
-    /* 이미지의 최대 너비를 조절 */
-    height: auto;
-    /* 높이를 자동으로 조절하여 비율 유지 */
-}
-
-.title4 {
-    position: absolute;
-    left: 800px;
-    top: 350px;
-    max-width: 100px;
-    /* 이미지의 최대 너비를 조절 */
-    height: auto;
-    /* 높이를 자동으로 조절하여 비율 유지 */
-}
-
-.image4 {
-    position: absolute;
-    left: 600px;
-    top: 350px;
-    max-width: 66px;
-    /* 이미지의 최대 너비를 조절 */
-    max-height: 66px;
-    height: auto;
-    /* 높이를 자동으로 조절하여 비율 유지 */
-}
-
-.description4 {
-    position: absolute;
-    left: 1200px;
-    top: 350px;
-    max-width: 500px;
-    /* 이미지의 최대 너비를 조절 */
-    height: auto;
-    /* 높이를 자동으로 조절하여 비율 유지 */
-}
 
 
 @media (max-width: 768px) {
@@ -461,3 +398,73 @@ footer #music_info #music_info_texts {
         display: none;
     }
 }
+#tag1{
+    text-align: center;
+    position: absolute;
+    top: 180px;
+    border: white 1px solid;
+    border-radius: 10px;
+    width: 70px;
+    color: white;
+}
+#tag2{
+    text-align: center;
+    position: absolute;
+    top: 180px;
+    margin-left: 120px;
+    border: white 1px solid;
+    border-radius: 10px;
+    width: 70px;
+    color: white;
+}
+#tag3{
+    text-align: center;
+    position: absolute;
+    top: 180px;
+    margin-left: 240px;
+    border: white 1px solid;
+    border-radius: 10px;
+    width: 70px;
+    color: white;
+}
+#tag4{
+    text-align: center;
+    position: absolute;
+    top: 180px;
+    margin-left: 360px;
+    border: white 1px solid;
+    border-radius: 10px;
+    width: 70px;
+    color: white;
+}
+#tag5{
+    text-align: center;
+    position: absolute;
+    top: 180px;
+    margin-left: 480px;
+    border: white 1px solid;
+    border-radius: 10px;
+    width: 70px;
+    color: white;
+}
+#tag6{
+    text-align: center;
+    position: absolute;
+    top: 180px;
+    margin-left: 600px;
+    border: white 1px solid;
+    border-radius: 10px;
+    width: 70px;
+    color: white;
+}
+#tag7{
+    text-align: center;
+    position: absolute;
+    top: 180px;
+    margin-left: 720px;
+    border: white 1px solid;
+    border-radius: 10px;
+    width: 70px;
+    color: white;
+}
+
