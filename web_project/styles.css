@@ -404,7 +404,7 @@ footer #music_info #music_info_texts {
     top: 180px;
     border: white 1px solid;
     border-radius: 10px;
-    width: 70px;
+    width: 80px;
     color: white;
 }
 #tag2{
@@ -414,7 +414,7 @@ footer #music_info #music_info_texts {
     margin-left: 120px;
     border: white 1px solid;
     border-radius: 10px;
-    width: 70px;
+    width: 80px;
     color: white;
 }
 #tag3{
@@ -424,7 +424,7 @@ footer #music_info #music_info_texts {
     margin-left: 240px;
     border: white 1px solid;
     border-radius: 10px;
-    width: 70px;
+    width: 80px;
     color: white;
 }
 #tag4{
@@ -434,7 +434,7 @@ footer #music_info #music_info_texts {
     margin-left: 360px;
     border: white 1px solid;
     border-radius: 10px;
-    width: 70px;
+    width: 80px;
     color: white;
 }
 #tag5{
@@ -444,7 +444,7 @@ footer #music_info #music_info_texts {
     margin-left: 480px;
     border: white 1px solid;
     border-radius: 10px;
-    width: 70px;
+    width: 80px;
     color: white;
 }
 #tag6{
@@ -454,7 +454,7 @@ footer #music_info #music_info_texts {
     margin-left: 600px;
     border: white 1px solid;
     border-radius: 10px;
-    width: 70px;
+    width: 80px;
     color: white;
 }
 #tag7{
@@ -464,7 +464,38 @@ footer #music_info #music_info_texts {
     margin-left: 720px;
     border: white 1px solid;
     border-radius: 10px;
-    width: 70px;
+    width: 80px;
     color: white;
 }
+.title1 {
+    cursor: pointer;
+}
+.image1 {
+    cursor: pointer;
+}
+footer > button{
+    position: absolute;
+    top: 60px;
+    left: 25px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: black 3px solid;
+    border-radius: 8px;
+    font-size: 15px;
 
+}
+#uploadInput {
+    display: none; /* 기본 파일 선택 버튼 숨김 */
+}
+#customUploadButton {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: black; /* 배경 색상 */
+    color: #fff; /* 텍스트 색상 */
+    border: black 3px solid; /* 테두리 제거 */
+    border-radius: 8px;
+    cursor: pointer; /* 커서 포인터로 변경 */
+    font-size: 15px;
+}

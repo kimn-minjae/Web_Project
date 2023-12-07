@@ -12,7 +12,7 @@ const nextButton = document.getElementById('nextButton');
 const currentTimeDisplay = document.getElementById('currentTime');
 const totalTimeDisplay = document.getElementById('totalTime');
 const TitleDisplay = document.getElementById('Title');
-const SubtitleDisplay = document.getElementById('Subtitle')
+const SubtitleDisplay = document.getElementById('Subtitle');
 
 const playlist = ["music/Perfect night", "music/Drama.mp3", "music/Baddie.mp3", "music/Seven.mp3", "music/Love Lee.mp3", "music/사랑은 늘 도망가.mp3", "music/후라이의 꿈.mp3", "music/You&me.mp3", "music/헤어지자 말해요.mp3", "music/Do or die.mp3", "music/모래 알갱이.mp3", "music/우리들의 블루스.mp3", "music/Either Way.mp3", "music/인사.mp3", "music/Super Shy.mp3", "music/Smoke.mp3", "music/사막에서 꽃을 피우듯.mp3", "music/ETA.mp3", "music/첫눈.mp3", "music/그대만 있다면.mp3", "music/Standing next to you.mp3", "music/All I Want for Christmas Is You.mp3", "music/퀸카.mp3", "music/Get A Guitar.mp3", "music/별 떨어진다.mp3", "music/Ditto.mp3", "music/Fast Forward.mp3", "music/Hype Boy.mp3"];
 const title = ["Perfect night", "Drama", "Baddie", "Seven", "Love Lee", "사랑은 늘 도망가", "후라이의 꿈", "You&me", "헤어지자 말해요", "Do or die", "모래 알갱이", "우리들의 블루스", "Either Way", "인사", "Super Shy", "Smoke (Prod. Dynamicduo, Padi)", "사막에서 꽃을 피우듯", "ETA", "첫 눈", "그대만 있다면 (여름날 우리 X 너드커넥션 (Nerd Connection))", "Standing Next to You", "All I Want for Christmas Is You", "퀸카 (Queencard)", "Get A Guitar", "별 떨어진다 (I Do)", "Ditto", "Fast Forward", "Hype Boy"];
@@ -84,8 +84,8 @@ function playPrevTrack() {
     document.getElementById('music_info_image').src = MusicImg[currentImg];
     if (currentTitleIndex == 0 && currentSubtitleIndex == 0) {
 
-        currentTitleIndex = 27;
-        currentSubtitleIndex = 27;
+        currentTitleIndex = title.length-1;
+        currentSubtitleIndex = subtitle.length-1;
         Title.innerText = `${title[currentTitleIndex]}`;
         Subtitle.innerText = `${subtitle[currentSubtitleIndex]}`;
 
@@ -104,7 +104,7 @@ function playNextTrack() {
     currentImg = (currentImg + 1) % MusicImg.length;
     loadTrack();
     document.getElementById('music_info_image').src = MusicImg[currentImg];
-    if (currentTitleIndex == 27 && currentSubtitleIndex == 27) {
+    if (currentTitleIndex == title.length - 1 && currentSubtitleIndex == subtitle.length - 1) {
         currentTitleIndex = 0;
         currentSubtitleIndex = 0;
         Title.innerText = `${title[currentTitleIndex]}`;
@@ -168,7 +168,7 @@ function updateVolumeBar() {
 document.addEventListener('DOMContentLoaded', function () {
     const searchInput = document.getElementById('searchInput');
     const resultList = document.getElementById('resultList');
-    const maxResults = 5; // 최대 표시 결과 개수 설정
+    const maxResults = 5;
 
     const data = [
         "Perfect night",
@@ -232,7 +232,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Close the result list when clicking outside the input and results
     document.addEventListener('click', function (event) {
         if (!event.target.closest('#searchInput') && !event.target.closest('#resultList')) {
             resultList.innerHTML = '';
@@ -243,6 +242,35 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     const searchButton = document.getElementById('searchButton');
     const char_childs_container = document.getElementById('chart2');
+    const uploadInput = document.getElementById('uploadInput');
+    const uploadButton = document.getElementById('uploadButton');
+
+    uploadButton.addEventListener('click', function () {
+        const file = uploadInput.files[0];
+
+        if (file) {
+            const filePath = URL.createObjectURL(file);
+            playlist.push(filePath);
+
+            title.push('Uploaded Song');
+            MusicImg.push('icon/unknowns.png');
+            subtitle.push('Unknown Artist');
+
+            currentTrackIndex = playlist.length - 1;
+            loadTrack();
+
+            currentImg = MusicImg.length - 1;
+            currentTitleIndex = title.length - 1;
+            currentSubtitleIndex = subtitle.length - 1;
+            document.getElementById('music_info_image').src = MusicImg[currentImg];
+            Title.innerText = `${title[currentTitleIndex]}`;
+            Subtitle.innerText = `${subtitle[currentSubtitleIndex]}`;
+        } else {
+            console.error('No file selected');
+        }
+
+        uploadInput.value = null;
+    });
 
     function displayResults(data) {
         document.getElementById('chart').style.display = 'none';
@@ -265,21 +293,25 @@ document.addEventListener('DOMContentLoaded', function () {
                 
 
                 const image1 = document.createElement('img');
+                image1.className = 'image1'
                 image1.src = MusicImg[0];
                 image1.alt = '';
                 chart_div1.appendChild(image1);
 
                 const image2 = document.createElement('img');
+                image2.className = 'image2'
                 image2.src = MusicImg[1];
                 image2.alt = '';
                 chart_div2.appendChild(image2);
 
                 const image3 = document.createElement('img');
+                image3.className = 'image3'
                 image3.src = MusicImg[2];
                 image3.alt = '';
                 chart_div3.appendChild(image3);
 
                 const image4 = document.createElement('img');
+                image4.className = 'image4'
                 image4.src = MusicImg[14];
                 image4.alt = '';
                 chart_div4.appendChild(image4);
@@ -305,20 +337,66 @@ document.addEventListener('DOMContentLoaded', function () {
                 title4.className = 'title4';
                 chart_div4.appendChild(title4);
 
+                title1.addEventListener('click', function() {
+                    window.open("./information.html?name=LE SSERAFIM", '_blank', 'fullscreen');
+                })
+
+                title2.addEventListener('click', function() {
+                    window.open("./information.html?name=Drama", '_blank', 'fullscreen')
+                })
+
+                title3.addEventListener('click', function() {
+                    window.open("./information.html?name=Baddie", '_blank', 'fullscreen')
+                })
+
+                title4.addEventListener('click', function() {
+                    window.open(item.url1_1, '_blank', 'fullscreen')
+                })
+
                 image1.addEventListener('click', function () {
-                    window.open("./information.html?name=LE SSERAFIM", '_blank', 'fullscreen')
+                    playlist.push('music/Perfect night.mp3');
+                    title.push('Perfect night');
+                    MusicImg.push('icon/perfect night.jpg');
+                    subtitle.push('LE SSERAFIM (르세라핌)');
+                    currentTrackIndex = playlist.length - 1;
+                    loadTrack();
+                    currentImg = MusicImg.length - 1;
+                    currentTitleIndex = title.length - 1;
+                    currentSubtitleIndex = subtitle.length - 1;
+                    document.getElementById('music_info_image').src = MusicImg[currentImg];
+                    Title.innerText = `${title[currentTitleIndex]}`;
+                    Subtitle.innerText = `${subtitle[currentSubtitleIndex]}`;
+
                 });
 
                 image2.addEventListener('click', function () {
-                    window.open("./information.html?name=Drama", '_blank', 'fullscreen')
+                    playlist.push('music/Drama.mp3');
+                    title.push('Drama');
+                    MusicImg.push('icon/Drama.webp');
+                    subtitle.push('aespa');
+                    currentTrackIndex = playlist.length - 1;
+                    loadTrack();
+                    currentImg = MusicImg.length - 1;
+                    currentTitleIndex = title.length - 1;
+                    currentSubtitleIndex = subtitle.length - 1;
+                    document.getElementById('music_info_image').src = MusicImg[currentImg];
+                    Title.innerText = `${title[currentTitleIndex]}`;
+                    Subtitle.innerText = `${subtitle[currentSubtitleIndex]}`;
                 });
 
                 image3.addEventListener('click', function () {
-                    window.open("./information.html?name=Baddie", '_blank', 'fullscreen')
-                });
-
-                image4.addEventListener('click', function () {
-                    window.open(item.url1_1, '_blank', 'fullscreen')
+                    playlist.push('music/Baddie.mp3');
+                    title.push('Baddie');
+                    MusicImg.push('icon/Baddie.webp');
+                    subtitle.push('IVE (아이브)');
+                    currentTrackIndex = playlist.length - 1;
+                    loadTrack();
+                    currentImg = MusicImg.length - 1;
+                    currentTitleIndex = title.length - 1;
+                    currentSubtitleIndex = subtitle.length - 1;
+                    document.getElementById('music_info_image').src = MusicImg[currentImg];
+                    Title.innerText = `${title[currentTitleIndex]}`;
+                    Subtitle.innerText = `${subtitle[currentSubtitleIndex]}`;
                 });
 
                 const description1 = document.createElement('h2');
@@ -1259,7 +1337,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 description1_2: subtitle[1],
                 description1_3: subtitle[2],
                 description1_4: subtitle[14],
-                url1_1: './information.html?name=LE SSERAFIM'
             },
             {
                 title2_1: title[1],

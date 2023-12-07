@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>음악 재생기</title>
+    <title>WEB TUNE</title>
 </head>
 
 <body>
@@ -32,12 +32,12 @@
                 <h1>추천 태그</h1>
                 <div id="tags_container">
                     <div id="tag1">#노동요</div>
-                    <div id="tag2">#노동요</div>
-                    <div id="tag3">#노동요</div>
-                    <div id="tag4">#노동요</div>
-                    <div id="tag5">#노동요</div>
-                    <div id="tag6">#노동요</div>
-                    <div id="tag7">#노동요</div>
+                    <div id="tag2">#릴스</div>
+                    <div id="tag3">#겨울</div>
+                    <div id="tag4">#우울</div>
+                    <div id="tag5">#감성적인</div>
+                    <div id="tag6">#운동</div>
+                    <div id="tag7">#드라이브</div>
                 </div>
             </div>
             <div id="chart">
@@ -101,6 +101,9 @@
     </audio>
 
     <footer>
+        <label for="uploadInput" id="customUploadButton">File Upload</label>
+        <input type="file" id="uploadInput" accept=".mp3" />
+        <button id="uploadButton">Upload Music</button>
         <div id="music_info_image_contain">
             <img id="music_info_image" src="./icon/perfect night.jpg" alt="이미지">
         </div>
